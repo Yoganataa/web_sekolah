@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMP NEGERI 3 SRENGAT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* custom styles */
+        .bg-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .footer-hover {
+            transition: all .2s ease-in-out;
+            filter: blur(2px);
+        }
+
+        .footer-hover:hover {
+            transform: translateY(-10px);
+            filter: blur(0);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-green-700 text-white px-8 py-4 flex justify-between items-center opacity-80">
+        <!-- <a href="#" class="font-bold text-lg"></a> -->
+        <a href="#" class="flex items-center">
+            <img src="./src/images/logo-dikdasmen.png" alt="Logo" class="h-8">
+            <span class="font-bold text-lg ml-2">SMP NEGERI 3 SRENGAT</span>
+        </a>
+        <ul class="flex">
+            <li class="ml-6"><a href="#">Beranda</a></li>
+            <li class="ml-6"><a href="#">Tentang Kami</a></li>
+            <li class="ml-6"><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="relative overflow-hidden bg-gray-100 shadow-md hover:shadow-lg">
+        <img src="./src/images/bg.jpg" alt="Gambar" class="w-full">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-end justify-center">
+            <div class="flex flex-wrap nowrap">
+                <div class="bg-gray-100 rounded-lg shadow-lg bg-opacity-60 p-6 m-4">
+                    <h3 class="text-xl font-bold mb-2">Profil Sekolah</h3>
+                    <p class="text-gray-700 text-xs leading-relaxed">SMP NEGERI 3 SRENGAT</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg bg-opacity-60 p-6 m-4">
+                    <h3 class="text-xl font-bold mb-2">Ekstrakurikuler</h3>
+                    <p class="text-gray-700 text-xs leading-relaxed">SMP NEGERI 3 SRENGAT</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg bg-opacity-60 p-6 m-4">
+                    <h3 class="text-xl font-bold mb-2">Fasilitas</h3>
+                    <p class="text-gray-700 text-xs leading-relaxed">Deskripsi fasilitas...</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg bg-opacity-60 p-6 m-4">
+                    <h3 class="text-xl font-bold mb-2">Pendaftaran</h3>
+                    <p class="text-gray-700 text-xs leading-relaxed">Deskripsi pendaftaran...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Hero section -->
+    <section class="bg-green-200 py-16 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Selamat datang di SMP NEGERI 3 SRENGAT</h1>
+            <p class="text-lg mb-8">Kami adalah sekolah yang berfokus pada pengembangan potensi siswa untuk meraih
+                prestasi terbaik</p>
+            <button class="bg-green-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Daftar Sekarang</button>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="py-16 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Tentang Kami</h2>
+            <p class="mb-8">Kami adalah sekolah yang didirikan pada tahun 2000 dengan visi dan misi untuk membantu siswa
+                meraih prestasi terbaik. Kami menawarkan berbagai program unggulan yang dapat memenuhi kebutuhan belajar
+                siswa.</p>
+            <a href="#" class="text-blue-500 hover:text-blue-600">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="bg-green-200 py-16 px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Kontak</h2>
+            <p class="mb-8">Silahkan hubungi kami untuk informasi lebih lanjut</p>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block font-bold mb-2">Nama</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 px-4 py-2 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block font-bold mb-2">Pesan</label>
+                    <textarea id="message" name="message"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg"></textarea>
+                </div>
+                <button class="bg-green-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Kirim</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="bg-green-500 text-gray-100">
+        <div class="container mx-auto py-6 px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/3 mb-4 lg:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Tentang Kami</h2>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer euismod, nisl sed varius congue, augue turpis consequat magna, vel convallis nulla magna
+                        sed dolor.</p>
+                </div>
+                <div class="w-full lg:w-1/3 mb-4 lg:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Kontak Kami</h2>
+                    <ul class="list-reset">
+                        <li class="mb-2"><i class="fa fa-map-marker mr-2"></i>JL. A. YANI SELOKAJANG</li>
+                        <li class="mb-2"><i class="fa fa-phone mr-2"></i>0342552139</li>
+                        <li class="mb-2"><i class="fa fa-envelope mr-2"></i>smpntigasrengat@yahoo.com </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/3 mb-4 lg:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Ikuti Kami</h2>
+                    <div class="flex">
+                        <a href="#" class="mr-4"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="mr-4"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="mr-4"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-green-800 py-4">
+            <p class="text-center text-sm">&copy; 2023 All Rights Reserved. Made with <i
+                    class="fa fa-heart text-red-500"></i> by NATA</p>
+        </div>
+    </footer>
+    <script>
+        let elements = document.querySelectorAll('.footer-hover');
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('mouseenter', () => {
+                elements[i].classList.add('shadow-lg');
+            });
+            elements[i].addEventListener('mouseleave', () => {
+                elements[i].classList.remove('shadow-lg');
+            });
+        }
+    </script>
+
+
+    <!-- Backdrop blur for hero section -->
+    <div class="absolute inset-0 z-0"></div>
+
+</body>
+
+</html>
